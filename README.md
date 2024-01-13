@@ -1,4 +1,4 @@
-# pomodoro-timer
+# Pomodoro Timer
 The Pomodoro Technique is a time management method. It uses a timer to break work into intervals, typically 25 minutes in length, separated by short breaks, typically 5 minutes. Each interval is known as a pomodoro.
 
 ## Layout
