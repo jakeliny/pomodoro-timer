@@ -1,7 +1,14 @@
+import { Countdown } from "./components/Countdown";
+import { NewCycleForm } from "./components/NewCycleForm";
+import { HomeContainer } from "./styles";
+
 export function Home() {
   return (
-    <div>
-      <h1>Home</h1>
-    </div>
+    <HomeContainer>
+      <form>
+        <NewCycleForm />
+        <Countdown />
+      </form>
+    </HomeContainer>
   );
 }

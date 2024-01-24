@@ -1,20 +1,22 @@
-import { FileText, Timer } from "@phosphor-icons/react";
+import { Scroll, Timer } from "@phosphor-icons/react";
 import { NavLink } from "react-router-dom";
+import { HeaderContainer } from "./styles";
 
 export function Header() {
   return (
-    <header>
-      <div>
+    <HeaderContainer>
+      <span>
         <img src="/logo.png" alt="pomodoro timer logo" />
-      </div>
-      <div>
+        Pomodo Timer
+      </span>
+      <nav>
         <NavLink to="/" title="Home">
           <Timer size={32} />
         </NavLink>
         <NavLink to="/history" title="History">
-          <FileText size={32} />
+          <Scroll size={32} />
         </NavLink>
-      </div>
-    </header>
+      </nav>
+    </HeaderContainer>
   );
 }
