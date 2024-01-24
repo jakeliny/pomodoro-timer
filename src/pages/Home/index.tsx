@@ -48,9 +48,15 @@ export function Home() {
   return (
     <HomeContainer>
       <form onSubmit={handleSubmit(handleCreateNewCycle)}>
-        <FormProvider {...newCycleForm}>
-          <NewCycleForm />
-        </FormProvider>
+        {activeCycle ? (
+          <h1>
+            I work in {activeCycle.task} for {activeCycle.minutesAmount} minutes
+          </h1>
+        ) : (
+          <FormProvider {...newCycleForm}>
+            <NewCycleForm />
+          </FormProvider>
+        )}
         <Countdown />
 
         {activeCycle ? (
