@@ -7,7 +7,7 @@ export function Header() {
     <HeaderContainer>
       <span>
         <img src="/logo.png" alt="pomodoro timer logo" />
-        Pomodo Timer
+        Pomodoro Timer
       </span>
       <nav>
         <NavLink to="/" title="Home">
